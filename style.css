@@ -61,10 +61,47 @@ justify-content: center;
     color:white;
     font-size:100px;
     list-style-type: none;
+    text-decoration:underline;
+}
+
+.category-class:hover {
+    cursor: pointer;
 }
 
 .category-div {
     margin-top:5%;
     display:flex;
     justify-content: center;
+}
+
+
+
+.challenges-div {
+    display: none;
+}
+.challenges-div.active {
+    display: block;
+}
+
+.p-writeup {
+    font-size:20px;
+    color:white;
+    max-width:900px;
+}
+
+.p-div {
+    display:flex;
+    justify-content: center;
+    margin-top:3%;
+}
+
+.writeup-title-div {
+    margin-top:3%;
+    display:flex;
+    justify-content: center;
+}
+
+.writeup-title {
+    font-size:75px;
+    color:white;
 }

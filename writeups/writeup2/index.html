@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/style.css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writeup</title>
+</head>
+<body>
+
+    <div class="nav-bar-div">
+        <a class="w" href="/">Home</a>
+        <a href="/writeups/">Writeups</a>
+        <a href="/me/">ME</a>
+    </div>
+
+    <div class="category-div">
+        <ul>
+            <li class="list-class">
+                <a class="category-class" href="#">web &#127760</a>
+                <div class="challenges-div">
+                    <ul>
+                        <li class ="list-class"> <a class="writeupclass" href="/writeups/writeup2/web1/">Web challenge 1</a></li>
+                        <li class="list-class"><a class="writeupclass" href="web2">Web challenge 2</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="list-class">
+                <a class="category-class" href="#">pwn 🐱‍💻</a>
+                <div class="challenges-div">
+                    <ul>
+                        <li class="list-class"><a class="writeupclass" href="pwn1">Pwn challenge 1</a></li>
+                        <li class="list-class"><a class="writeupclass" href="pwn2">Pwn challenge 2</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="list-class">
+                <a class="category-class" href="#">misc &#129300</a>
+                <div class="challenges-div">
+                    <ul>
+                        <li class="list-class">Misc challenge 1</li>
+                        <li class="list-class">Misc challenge 2</li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="list-class">
+                <a class="category-class" href="#">forensic &#128373</a>
+                <div class="challenges-div">
+                    <ul>
+                        <li class="list-class">Forensics challenge 1</li>
+                        <li class="list-class">Forensics challenge 2</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        
+    </div>
+
+    <script>
+        const categories = document.querySelectorAll('.category-class');
+
+        categories.forEach(category => {
+            category.addEventListener('click', function(e) {
+                e.preventDefault();
+                const challengeDiv = this.nextElementSibling;
+                if (challengeDiv && challengeDiv.classList.contains('challenges-div')) {
+                    challengeDiv.classList.toggle('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
