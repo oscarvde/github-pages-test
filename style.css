@@ -18,11 +18,17 @@ justify-content: center;
 #image-bear {
     margin-top:10%;
     width:500px;
+    max-width: 45vw;
+}
+
+h1 {
+    font-size: clamp(2rem, 10vw, 5rem); 
 }
 
 #image-bear2 {
     margin-top:10%;
     width:500px;
+    max-width: 45vw;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
@@ -30,6 +36,8 @@ justify-content: center;
 .image-div {
 display:flex;
 justify-content: center;
+flex-wrap: wrap; 
+gap: 1rem;
 }
 
 .list-div {
